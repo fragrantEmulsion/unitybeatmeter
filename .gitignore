@@ -1,0 +1,6 @@
+
+*.wav
+**/_Music
+**/_Video
+**/Builds
+**/Library

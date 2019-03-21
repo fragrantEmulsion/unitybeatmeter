@@ -1,0 +1,4 @@
+RhythmosEditor - Configuration
+
+LastRhythmosDatabaseFile: U:/Projects/New Unity Project/Assets/DB/RhythmosDatabase.xml
+MetronomeSound: Assets/Sound/Beat.mp3
