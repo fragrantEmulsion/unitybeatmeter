@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: 8x8
   m_EditorClassIdentifier: 
   name: 8x8
-  difficulty: 10
+  difficulty: 5
   pattern: 0100000001000000010000000100000001000000010000000100000001000000

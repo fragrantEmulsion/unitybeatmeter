@@ -1,0 +1,520 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c6ec1357-0c7f-4b22-939f-02ddec205198" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/BeatMeter.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="629">
+              <caret line="141" column="17" lean-forward="true" selection-start-line="141" selection-start-column="17" selection-end-line="141" selection-end-column="17" />
+              <folding>
+                <marker date="1553298997108" expanded="false" signature="6:163" ph="..." />
+                <marker date="1553298997108" expanded="true" signature="203:6086" ph="{...}" />
+                <marker date="1553298997108" expanded="true" signature="789:1226" ph="{...}" />
+                <marker date="1553298997108" expanded="true" signature="946:1021" ph="/* eventProvider.Beat += OnBeat; ... */" />
+                <marker date="1553298997108" expanded="true" signature="1272:1359" ph="{...}" />
+                <marker date="1553298997108" expanded="true" signature="1391:1678" ph="{...}" />
+                <marker date="1553298997108" expanded="true" signature="1697:1802" ph="{...}" />
+                <marker date="1553298997108" expanded="true" signature="1834:3415" ph="{...}" />
+                <marker date="1553298997108" expanded="true" signature="1849:2074" ph="/* this is the code that removes beats that aren't in the right area, however I prefer to do it via collision ... */" />
+                <marker date="1553298997108" expanded="true" signature="2083:2561" ph="/* List&lt;BeatObject&gt; toRemove = new List&lt;BeatObject&gt;(); ... */" />
+                <marker date="1553298997108" expanded="true" signature="2715:2906" ph="{...}" />
+                <marker date="1553298997108" expanded="true" signature="2950:3409" ph="{...}" />
+                <marker date="1553298997108" expanded="true" signature="2990:3399" ph="{...}" />
+                <marker date="1553298997108" expanded="true" signature="3216:3338" ph="/* pos.x -= (magnitudeSmooth[rhythmTool.currentFrame] * .008f * rhythmTool.interpolation); ... */" />
+                <marker date="1553298997108" expanded="true" signature="3451:3615" ph="{...}" />
+                <marker date="1553298997108" expanded="true" signature="3485:3552" ph="{...}" />
+                <marker date="1553298997108" expanded="true" signature="3712:5361" ph="{...}" />
+                <marker date="1553298997108" expanded="true" signature="3753:5355" ph="{...}" />
+                <marker date="1553298997108" expanded="true" signature="4375:5345" ph="{...}" />
+                <marker date="1553298997108" expanded="true" signature="4406:4621" ph="/* store the remaining part of the float because frames are ints, but bpm fractions are floats ... */" />
+                <marker date="1553298997108" expanded="true" signature="4747:4866" ph="{...}" />
+                <marker date="1553298997108" expanded="true" signature="4960:5121" ph="{...}" />
+                <marker date="1553298997108" expanded="true" signature="5242:5331" ph="{...}" />
+                <marker date="1553298997108" expanded="true" signature="5408:5656" ph="{...}" />
+                <marker date="1553298997108" expanded="true" signature="5687:5803" ph="{...}" />
+                <marker date="1553298997108" expanded="true" signature="5852:5985" ph="{...}" />
+                <marker date="1553298997108" expanded="true" signature="6035:6079" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/RhythmTool/Scripts/RhythmTool.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="47" column="65" lean-forward="true" selection-start-line="47" selection-start-column="65" selection-end-line="47" selection-end-column="65" />
+              <folding>
+                <marker date="1553292552857" expanded="false" signature="6:133" ph="..." />
+                <marker date="1553292552857" expanded="true" signature="135:207" ph="/// The main Component for analyzing songs. ... " />
+                <marker date="1553292552857" expanded="true" signature="342:21189" ph="{...}" />
+                <marker date="1553292552857" expanded="true" signature="350:457" ph="/// Occurs when a new song has been loaded and is ready for playback.  ... " />
+                <marker date="1553292552857" expanded="true" signature="499:581" ph="/// Occurs when a song has finished playback. ... " />
+                <marker date="1553292552857" expanded="true" signature="622:702" ph="/// Occurs for every frame that has passed. ... " />
+                <marker date="1553292552857" expanded="true" signature="756:840" ph="/// Occurs every update when a song is playing. ... " />
+                <marker date="1553292552857" expanded="true" signature="895:989" ph="/// Occurs when a song has stopped or restarted playback. ... " />
+                <marker date="1553292552857" expanded="true" signature="1026:1114" ph="/// The number of samples to use for FFT per frame. ... " />
+                <marker date="1553292552857" expanded="true" signature="1188:1287" ph="/// The number of samples the FFT window moves for each frame. ... " />
+                <marker date="1553292552857" expanded="true" signature="1359:1465" ph="/// The number of frames that are a part of the analysis at any time. ... " />
+                <marker date="1553292552857" expanded="true" signature="1537:1661" ph="/// Analysis results for the default low frequency range analysis.  ... " />
+                <marker date="1553292552857" expanded="true" signature="1733:1860" ph="/// Analysis results for the default mid frequency range analysis.  ... " />
+                <marker date="1553292552857" expanded="true" signature="1932:2062" ph="/// Analysis results for the default high frequency range analysis.  ... " />
+                <marker date="1553292552857" expanded="true" signature="2136:2262" ph="/// Analysis results for the default wide frequency range analysis.  ... " />
+                <marker date="1553292552857" expanded="true" signature="2334:2443" ph="/// A collection of beats with the frame index as key and Beat as value. ... " />
+                <marker date="1553292552857" expanded="true" signature="2534:2796" ph="/// A collection of segment changes with the frame index as key and average volume as value. ... " />
+                <marker date="1553292552857" expanded="true" signature="2890:2963" ph="/// The most probable BPM currently. ... " />
+                <marker date="1553292552857" expanded="true" signature="3012:3127" ph="/// The length of the beat (in frames) of the beat that is currently occuring. ... " />
+                <marker date="1553292552857" expanded="true" signature="3183:3264" ph="/// The current sample that is being played. ... " />
+                <marker date="1553292552857" expanded="true" signature="3326:3415" ph="/// The total number of frames for the current song. ... " />
+                <marker date="1553292552857" expanded="true" signature="3474:3558" ph="/// The frame index of the last analyzed frame. ... " />
+                <marker date="1553292552857" expanded="true" signature="3611:3726" ph="/// The index of the frame that corresponds with the current time in the song. ... " />
+                <marker date="1553292552857" expanded="true" signature="3782:3874" ph="/// The time in between the current frame and the next. ... " />
+                <marker date="1553292552857" expanded="true" signature="3933:4007" ph="/// The length of a frame in seconds. ... " />
+                <marker date="1553292552857" expanded="true" signature="4064:4145" ph="/// Is a song loaded and ready to be played? ... " />
+                <marker date="1553292552857" expanded="true" signature="4200:4262" ph="/// Is the analysis done? ... " />
+                <marker date="1553292552857" expanded="true" signature="4319:4390" ph="/// Is the song playing right now? ... " />
+                <marker date="1553292552857" expanded="true" signature="4416:4502" ph="{...}" />
+                <marker date="1553292552857" expanded="true" signature="4434:4496" ph="{...}" />
+                <marker date="1553292552857" expanded="true" signature="4508:4579" ph="/// The volume of the AudioSource. ... " />
+                <marker date="1553292552857" expanded="true" signature="4603:4758" ph="{...}" />
+                <marker date="1553292552857" expanded="true" signature="4621:4680" ph="{...}" />
+                <marker date="1553292552857" expanded="true" signature="4692:4752" ph="{...}" />
+                <marker date="1553292552857" expanded="true" signature="4764:4834" ph="/// The pitch of the AudioSource. ... " />
+                <marker date="1553292552857" expanded="true" signature="4857:5010" ph="{...}" />
+                <marker date="1553292552857" expanded="true" signature="4875:4933" ph="{...}" />
+                <marker date="1553292552857" expanded="true" signature="4945:5004" ph="{...}" />
+                <marker date="1553292552857" expanded="true" signature="5016:5091" ph="/// The AudioClip to analyze and play. ... " />
+                <marker date="1553292552857" expanded="true" signature="5122:5290" ph="{...}" />
+                <marker date="1553292552857" expanded="true" signature="5140:5191" ph="{...}" />
+                <marker date="1553292552857" expanded="true" signature="5203:5284" ph="{...}" />
+                <marker date="1553292552857" expanded="true" signature="5296:5458" ph="/// How many frames ahead the song is analyzed. ... " />
+                <marker date="1553292552857" expanded="true" signature="5478:5629" ph="{...}" />
+                <marker date="1553292552857" expanded="true" signature="5496:5542" ph="{...}" />
+                <marker date="1553292552857" expanded="true" signature="5554:5623" ph="{...}" />
+                <marker date="1553292552857" expanded="true" signature="5635:5698" ph="/// Perform beat tracking? ... " />
+                <marker date="1553292552857" expanded="true" signature="5724:5863" ph="{...}" />
+                <marker date="1553292552857" expanded="true" signature="5742:5793" ph="{...}" />
+                <marker date="1553292552857" expanded="true" signature="5805:5857" ph="{...}" />
+                <marker date="1553292552857" expanded="true" signature="5869:5945" ph="/// Analyze the entire song in advance? ... " />
+                <marker date="1553292552857" expanded="true" signature="5972:6113" ph="{...}" />
+                <marker date="1553292552857" expanded="true" signature="5990:6042" ph="{...}" />
+                <marker date="1553292552857" expanded="true" signature="6054:6107" ph="{...}" />
+                <marker date="1553292552857" expanded="true" signature="6119:6184" ph="/// Cache analysis results?  ... " />
+                <marker date="1553292552857" expanded="true" signature="6214:6305" ph="{...}" />
+                <marker date="1553292552857" expanded="true" signature="7142:7750" ph="{...}" />
+                <marker date="1553292552857" expanded="true" signature="7769:7855" ph="{...}" />
+                <marker date="1553292552857" expanded="true" signature="7877:7920" ph="{...}" />
+                <marker date="1553292552857" expanded="true" signature="7953:8554" ph="{...}" />
+                <marker date="1553292552857" expanded="true" signature="8589:9060" ph="{...}" />
+                <marker date="1553292552857" expanded="true" signature="8803:8981" ph="{...}" />
+                <marker date="1553292552857" expanded="true" signature="9093:9439" ph="{...}" />
+                <marker date="1553292552857" expanded="true" signature="9299:9433" ph="{...}" />
+                <marker date="1553292552857" expanded="true" signature="9493:9883" ph="{...}" />
+                <marker date="1553292552857" expanded="true" signature="9926:10332" ph="{...}" />
+                <marker date="1553292552857" expanded="true" signature="10063:10326" ph="{...}" />
+                <marker date="1553292552857" expanded="true" signature="10362:11234" ph="{...}" />
+                <marker date="1553292552857" expanded="true" signature="11265:11403" ph="{...}" />
+                <marker date="1553292552857" expanded="true" signature="11435:12079" ph="{...}" />
+                <marker date="1553292552857" expanded="true" signature="11489:11549" ph="{...}" />
+                <marker date="1553292552857" expanded="true" signature="12113:12305" ph="{...}" />
+                <marker date="1553292552857" expanded="true" signature="12338:12436" ph="{...}" />
+                <marker date="1553292552857" expanded="true" signature="12468:12536" ph="{...}" />
+                <marker date="1553292552857" expanded="true" signature="12571:12745" ph="{...}" />
+                <marker date="1553292552857" expanded="true" signature="12773:12887" ph="{...}" />
+                <marker date="1553292552857" expanded="true" signature="12912:13190" ph="{...}" />
+                <marker date="1553292552857" expanded="true" signature="13218:14130" ph="{...}" />
+                <marker date="1553292552857" expanded="true" signature="13300:13970" ph="{...}" />
+                <marker date="1553292552857" expanded="true" signature="13580:13841" ph="{...}" />
+                <marker date="1553292552857" expanded="true" signature="13650:13827" ph="{...}" />
+                <marker date="1553292552857" expanded="true" signature="13720:13809" ph="{...}" />
+                <marker date="1553292552857" expanded="true" signature="13998:14124" ph="{...}" />
+                <marker date="1553292552857" expanded="true" signature="14140:14204" ph="/// Start playing the song. ... " />
+                <marker date="1553292552857" expanded="true" signature="14227:14407" ph="{...}" />
+                <marker date="1553292552857" expanded="true" signature="14413:14476" ph="/// Stop playing the song. ... " />
+                <marker date="1553292552857" expanded="true" signature="14499:14605" ph="{...}" />
+                <marker date="1553292552857" expanded="true" signature="14611:14667" ph="/// Pause the song. ... " />
+                <marker date="1553292552857" expanded="true" signature="14691:14732" ph="{...}" />
+                <marker date="1553292552857" expanded="true" signature="14738:14803" ph="/// Unpause the paused song. ... " />
+                <marker date="1553292552857" expanded="true" signature="14829:14872" ph="{...}" />
+                <marker date="1553292552857" expanded="true" signature="14882:15148" ph="/// Add a custom Analysis. ... " />
+                <marker date="1553292552857" expanded="true" signature="15217:15617" ph="{...}" />
+                <marker date="1553292552857" expanded="true" signature="15271:15471" ph="{...}" />
+                <marker date="1553292552857" expanded="true" signature="15320:15461" ph="{...}" />
+                <marker date="1553292552857" expanded="true" signature="15623:15868" ph="/// Returns AnalysisData for the Analysis with name. ... " />
+                <marker date="1553292552857" expanded="true" signature="15917:16180" ph="{...}" />
+                <marker date="1553292552857" expanded="true" signature="15971:16076" ph="{...}" />
+                <marker date="1553292552857" expanded="true" signature="16186:16383" ph="/// Get the next beat closest to index. ... " />
+                <marker date="1553292552857" expanded="true" signature="16419:16475" ph="{...}" />
+                <marker date="1553292552857" expanded="true" signature="16481:16690" ph="/// Get the previous beat closest to index. ... " />
+                <marker date="1553292552857" expanded="true" signature="16726:16782" ph="{...}" />
+                <marker date="1553292552857" expanded="true" signature="16788:17005" ph="/// Get the next beat index closest to index. ... " />
+                <marker date="1553292552857" expanded="true" signature="17045:17106" ph="{...}" />
+                <marker date="1553292552857" expanded="true" signature="17112:17251" ph="/// Get the next beat index closest to currentFrame. ... " />
+                <marker date="1553292552857" expanded="true" signature="17282:17338" ph="{...}" />
+                <marker date="1553292552857" expanded="true" signature="17348:17577" ph="/// Get the previous beat index closest to index. ... " />
+                <marker date="1553292552857" expanded="true" signature="17617:17678" ph="{...}" />
+                <marker date="1553292552857" expanded="true" signature="17684:17831" ph="/// Get the previous beat index closest to currentFrame. ... " />
+                <marker date="1553292552857" expanded="true" signature="17862:17918" ph="{...}" />
+                <marker date="1553292552857" expanded="true" signature="17924:18235" ph="/// Get the normalized time between the previous and next beat indices for index. ... " />
+                <marker date="1553292552857" expanded="true" signature="18274:18330" ph="{...}" />
+                <marker date="1553292552857" expanded="true" signature="18336:18582" ph="/// Get the normalized time between the previous and next beat indices for currentFrame. ... " />
+                <marker date="1553292552857" expanded="true" signature="18610:18677" ph="{...}" />
+                <marker date="1553292552857" expanded="true" signature="18683:19031" ph="/// Get the next segment change closes to index. ... " />
+                <marker date="1553292552857" expanded="true" signature="19070:19126" ph="{...}" />
+                <marker date="1553292552857" expanded="true" signature="19132:19492" ph="/// Get the previous segment change closes to index. ... " />
+                <marker date="1553292552857" expanded="true" signature="19531:19587" ph="{...}" />
+                <marker date="1553292552857" expanded="true" signature="19593:19805" ph="/// Get the frame index of the next segment change closes to index. ... " />
+                <marker date="1553292552857" expanded="true" signature="19847:19908" ph="{...}" />
+                <marker date="1553292552857" expanded="true" signature="19914:20134" ph="/// Get the frame index of the previous segment change closes to index. ... " />
+                <marker date="1553292552857" expanded="true" signature="20176:20237" ph="{...}" />
+                <marker date="1553292552857" expanded="true" signature="20243:20557" ph="/// Get the spectrum for the audio that's currently playing. ... " />
+                <marker date="1553292552857" expanded="true" signature="20633:20708" ph="{...}" />
+                <marker date="1553292552857" expanded="true" signature="20714:20811" ph="/// Draw analysis results in graphs for the next 300 frames. ... " />
+                <marker date="1553292552857" expanded="true" signature="20844:21183" ph="{...}" />
+                <marker date="1553292552857" expanded="true" signature="21001:21078" ph="{...}" />
+                <marker date="1553292552857" expanded="true" signature="21103:21177" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/RhythmTool/Scripts/RhythmTool.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/BeatMeter.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Assets/RhythmTool/Scripts/RhythmTool.cs" />
+        <option value="$PROJECT_DIR$/Assets/BeatMeter.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="InvalidFacetManager">
+    <ignored-facets>
+      <facet id="riderModule/invalid/Default Android Facet" />
+    </ignored-facets>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="253" />
+    <option name="y" value="-26" />
+    <option name="width" value="1400" />
+    <option name="height" value="1000" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="UnityExplorer" proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="AssemblyExplorer" />
+      <pane id="UnityExplorer">
+        <option name="show-hidden-items" value="false" />
+      </pane>
+      <pane id="FileSystemExplorer" />
+      <pane id="SolutionExplorer">
+        <option name="show-all-files" value="false" />
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
+    <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c6ec1357-0c7f-4b22-939f-02ddec205198" name="Default Changelist" comment="" />
+      <created>1553290438103</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1553290438103</updated>
+      <workItem from="1553290442056" duration="6418000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="6418000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <layout>
+      <window_info id="Image Layers" />
+      <window_info id="Capture Tool" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info id="Captures" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17857143" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Android Profiler" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Performance Profiler" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="NuGet" />
+      <window_info anchor="bottom" id="Logcat" />
+      <window_info anchor="bottom" id="Unit Tests" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Unity" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Device File Explorer" side_tool="true" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Unit Tests Coverage" />
+      <window_info anchor="right" id="Errors In Solution" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" suspend="NONE" type="DotNet Exception Breakpoints">
+          <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Assets/RhythmTool/Scripts/RhythmTool.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="47" column="65" lean-forward="true" selection-start-line="47" selection-start-column="65" selection-end-line="47" selection-end-column="65" />
+          <folding>
+            <marker date="1553292552857" expanded="false" signature="6:133" ph="..." />
+            <marker date="1553292552857" expanded="true" signature="135:207" ph="/// The main Component for analyzing songs. ... " />
+            <marker date="1553292552857" expanded="true" signature="342:21189" ph="{...}" />
+            <marker date="1553292552857" expanded="true" signature="350:457" ph="/// Occurs when a new song has been loaded and is ready for playback.  ... " />
+            <marker date="1553292552857" expanded="true" signature="499:581" ph="/// Occurs when a song has finished playback. ... " />
+            <marker date="1553292552857" expanded="true" signature="622:702" ph="/// Occurs for every frame that has passed. ... " />
+            <marker date="1553292552857" expanded="true" signature="756:840" ph="/// Occurs every update when a song is playing. ... " />
+            <marker date="1553292552857" expanded="true" signature="895:989" ph="/// Occurs when a song has stopped or restarted playback. ... " />
+            <marker date="1553292552857" expanded="true" signature="1026:1114" ph="/// The number of samples to use for FFT per frame. ... " />
+            <marker date="1553292552857" expanded="true" signature="1188:1287" ph="/// The number of samples the FFT window moves for each frame. ... " />
+            <marker date="1553292552857" expanded="true" signature="1359:1465" ph="/// The number of frames that are a part of the analysis at any time. ... " />
+            <marker date="1553292552857" expanded="true" signature="1537:1661" ph="/// Analysis results for the default low frequency range analysis.  ... " />
+            <marker date="1553292552857" expanded="true" signature="1733:1860" ph="/// Analysis results for the default mid frequency range analysis.  ... " />
+            <marker date="1553292552857" expanded="true" signature="1932:2062" ph="/// Analysis results for the default high frequency range analysis.  ... " />
+            <marker date="1553292552857" expanded="true" signature="2136:2262" ph="/// Analysis results for the default wide frequency range analysis.  ... " />
+            <marker date="1553292552857" expanded="true" signature="2334:2443" ph="/// A collection of beats with the frame index as key and Beat as value. ... " />
+            <marker date="1553292552857" expanded="true" signature="2534:2796" ph="/// A collection of segment changes with the frame index as key and average volume as value. ... " />
+            <marker date="1553292552857" expanded="true" signature="2890:2963" ph="/// The most probable BPM currently. ... " />
+            <marker date="1553292552857" expanded="true" signature="3012:3127" ph="/// The length of the beat (in frames) of the beat that is currently occuring. ... " />
+            <marker date="1553292552857" expanded="true" signature="3183:3264" ph="/// The current sample that is being played. ... " />
+            <marker date="1553292552857" expanded="true" signature="3326:3415" ph="/// The total number of frames for the current song. ... " />
+            <marker date="1553292552857" expanded="true" signature="3474:3558" ph="/// The frame index of the last analyzed frame. ... " />
+            <marker date="1553292552857" expanded="true" signature="3611:3726" ph="/// The index of the frame that corresponds with the current time in the song. ... " />
+            <marker date="1553292552857" expanded="true" signature="3782:3874" ph="/// The time in between the current frame and the next. ... " />
+            <marker date="1553292552857" expanded="true" signature="3933:4007" ph="/// The length of a frame in seconds. ... " />
+            <marker date="1553292552857" expanded="true" signature="4064:4145" ph="/// Is a song loaded and ready to be played? ... " />
+            <marker date="1553292552857" expanded="true" signature="4200:4262" ph="/// Is the analysis done? ... " />
+            <marker date="1553292552857" expanded="true" signature="4319:4390" ph="/// Is the song playing right now? ... " />
+            <marker date="1553292552857" expanded="true" signature="4416:4502" ph="{...}" />
+            <marker date="1553292552857" expanded="true" signature="4434:4496" ph="{...}" />
+            <marker date="1553292552857" expanded="true" signature="4508:4579" ph="/// The volume of the AudioSource. ... " />
+            <marker date="1553292552857" expanded="true" signature="4603:4758" ph="{...}" />
+            <marker date="1553292552857" expanded="true" signature="4621:4680" ph="{...}" />
+            <marker date="1553292552857" expanded="true" signature="4692:4752" ph="{...}" />
+            <marker date="1553292552857" expanded="true" signature="4764:4834" ph="/// The pitch of the AudioSource. ... " />
+            <marker date="1553292552857" expanded="true" signature="4857:5010" ph="{...}" />
+            <marker date="1553292552857" expanded="true" signature="4875:4933" ph="{...}" />
+            <marker date="1553292552857" expanded="true" signature="4945:5004" ph="{...}" />
+            <marker date="1553292552857" expanded="true" signature="5016:5091" ph="/// The AudioClip to analyze and play. ... " />
+            <marker date="1553292552857" expanded="true" signature="5122:5290" ph="{...}" />
+            <marker date="1553292552857" expanded="true" signature="5140:5191" ph="{...}" />
+            <marker date="1553292552857" expanded="true" signature="5203:5284" ph="{...}" />
+            <marker date="1553292552857" expanded="true" signature="5296:5458" ph="/// How many frames ahead the song is analyzed. ... " />
+            <marker date="1553292552857" expanded="true" signature="5478:5629" ph="{...}" />
+            <marker date="1553292552857" expanded="true" signature="5496:5542" ph="{...}" />
+            <marker date="1553292552857" expanded="true" signature="5554:5623" ph="{...}" />
+            <marker date="1553292552857" expanded="true" signature="5635:5698" ph="/// Perform beat tracking? ... " />
+            <marker date="1553292552857" expanded="true" signature="5724:5863" ph="{...}" />
+            <marker date="1553292552857" expanded="true" signature="5742:5793" ph="{...}" />
+            <marker date="1553292552857" expanded="true" signature="5805:5857" ph="{...}" />
+            <marker date="1553292552857" expanded="true" signature="5869:5945" ph="/// Analyze the entire song in advance? ... " />
+            <marker date="1553292552857" expanded="true" signature="5972:6113" ph="{...}" />
+            <marker date="1553292552857" expanded="true" signature="5990:6042" ph="{...}" />
+            <marker date="1553292552857" expanded="true" signature="6054:6107" ph="{...}" />
+            <marker date="1553292552857" expanded="true" signature="6119:6184" ph="/// Cache analysis results?  ... " />
+            <marker date="1553292552857" expanded="true" signature="6214:6305" ph="{...}" />
+            <marker date="1553292552857" expanded="true" signature="7142:7750" ph="{...}" />
+            <marker date="1553292552857" expanded="true" signature="7769:7855" ph="{...}" />
+            <marker date="1553292552857" expanded="true" signature="7877:7920" ph="{...}" />
+            <marker date="1553292552857" expanded="true" signature="7953:8554" ph="{...}" />
+            <marker date="1553292552857" expanded="true" signature="8589:9060" ph="{...}" />
+            <marker date="1553292552857" expanded="true" signature="8803:8981" ph="{...}" />
+            <marker date="1553292552857" expanded="true" signature="9093:9439" ph="{...}" />
+            <marker date="1553292552857" expanded="true" signature="9299:9433" ph="{...}" />
+            <marker date="1553292552857" expanded="true" signature="9493:9883" ph="{...}" />
+            <marker date="1553292552857" expanded="true" signature="9926:10332" ph="{...}" />
+            <marker date="1553292552857" expanded="true" signature="10063:10326" ph="{...}" />
+            <marker date="1553292552857" expanded="true" signature="10362:11234" ph="{...}" />
+            <marker date="1553292552857" expanded="true" signature="11265:11403" ph="{...}" />
+            <marker date="1553292552857" expanded="true" signature="11435:12079" ph="{...}" />
+            <marker date="1553292552857" expanded="true" signature="11489:11549" ph="{...}" />
+            <marker date="1553292552857" expanded="true" signature="12113:12305" ph="{...}" />
+            <marker date="1553292552857" expanded="true" signature="12338:12436" ph="{...}" />
+            <marker date="1553292552857" expanded="true" signature="12468:12536" ph="{...}" />
+            <marker date="1553292552857" expanded="true" signature="12571:12745" ph="{...}" />
+            <marker date="1553292552857" expanded="true" signature="12773:12887" ph="{...}" />
+            <marker date="1553292552857" expanded="true" signature="12912:13190" ph="{...}" />
+            <marker date="1553292552857" expanded="true" signature="13218:14130" ph="{...}" />
+            <marker date="1553292552857" expanded="true" signature="13300:13970" ph="{...}" />
+            <marker date="1553292552857" expanded="true" signature="13580:13841" ph="{...}" />
+            <marker date="1553292552857" expanded="true" signature="13650:13827" ph="{...}" />
+            <marker date="1553292552857" expanded="true" signature="13720:13809" ph="{...}" />
+            <marker date="1553292552857" expanded="true" signature="13998:14124" ph="{...}" />
+            <marker date="1553292552857" expanded="true" signature="14140:14204" ph="/// Start playing the song. ... " />
+            <marker date="1553292552857" expanded="true" signature="14227:14407" ph="{...}" />
+            <marker date="1553292552857" expanded="true" signature="14413:14476" ph="/// Stop playing the song. ... " />
+            <marker date="1553292552857" expanded="true" signature="14499:14605" ph="{...}" />
+            <marker date="1553292552857" expanded="true" signature="14611:14667" ph="/// Pause the song. ... " />
+            <marker date="1553292552857" expanded="true" signature="14691:14732" ph="{...}" />
+            <marker date="1553292552857" expanded="true" signature="14738:14803" ph="/// Unpause the paused song. ... " />
+            <marker date="1553292552857" expanded="true" signature="14829:14872" ph="{...}" />
+            <marker date="1553292552857" expanded="true" signature="14882:15148" ph="/// Add a custom Analysis. ... " />
+            <marker date="1553292552857" expanded="true" signature="15217:15617" ph="{...}" />
+            <marker date="1553292552857" expanded="true" signature="15271:15471" ph="{...}" />
+            <marker date="1553292552857" expanded="true" signature="15320:15461" ph="{...}" />
+            <marker date="1553292552857" expanded="true" signature="15623:15868" ph="/// Returns AnalysisData for the Analysis with name. ... " />
+            <marker date="1553292552857" expanded="true" signature="15917:16180" ph="{...}" />
+            <marker date="1553292552857" expanded="true" signature="15971:16076" ph="{...}" />
+            <marker date="1553292552857" expanded="true" signature="16186:16383" ph="/// Get the next beat closest to index. ... " />
+            <marker date="1553292552857" expanded="true" signature="16419:16475" ph="{...}" />
+            <marker date="1553292552857" expanded="true" signature="16481:16690" ph="/// Get the previous beat closest to index. ... " />
+            <marker date="1553292552857" expanded="true" signature="16726:16782" ph="{...}" />
+            <marker date="1553292552857" expanded="true" signature="16788:17005" ph="/// Get the next beat index closest to index. ... " />
+            <marker date="1553292552857" expanded="true" signature="17045:17106" ph="{...}" />
+            <marker date="1553292552857" expanded="true" signature="17112:17251" ph="/// Get the next beat index closest to currentFrame. ... " />
+            <marker date="1553292552857" expanded="true" signature="17282:17338" ph="{...}" />
+            <marker date="1553292552857" expanded="true" signature="17348:17577" ph="/// Get the previous beat index closest to index. ... " />
+            <marker date="1553292552857" expanded="true" signature="17617:17678" ph="{...}" />
+            <marker date="1553292552857" expanded="true" signature="17684:17831" ph="/// Get the previous beat index closest to currentFrame. ... " />
+            <marker date="1553292552857" expanded="true" signature="17862:17918" ph="{...}" />
+            <marker date="1553292552857" expanded="true" signature="17924:18235" ph="/// Get the normalized time between the previous and next beat indices for index. ... " />
+            <marker date="1553292552857" expanded="true" signature="18274:18330" ph="{...}" />
+            <marker date="1553292552857" expanded="true" signature="18336:18582" ph="/// Get the normalized time between the previous and next beat indices for currentFrame. ... " />
+            <marker date="1553292552857" expanded="true" signature="18610:18677" ph="{...}" />
+            <marker date="1553292552857" expanded="true" signature="18683:19031" ph="/// Get the next segment change closes to index. ... " />
+            <marker date="1553292552857" expanded="true" signature="19070:19126" ph="{...}" />
+            <marker date="1553292552857" expanded="true" signature="19132:19492" ph="/// Get the previous segment change closes to index. ... " />
+            <marker date="1553292552857" expanded="true" signature="19531:19587" ph="{...}" />
+            <marker date="1553292552857" expanded="true" signature="19593:19805" ph="/// Get the frame index of the next segment change closes to index. ... " />
+            <marker date="1553292552857" expanded="true" signature="19847:19908" ph="{...}" />
+            <marker date="1553292552857" expanded="true" signature="19914:20134" ph="/// Get the frame index of the previous segment change closes to index. ... " />
+            <marker date="1553292552857" expanded="true" signature="20176:20237" ph="{...}" />
+            <marker date="1553292552857" expanded="true" signature="20243:20557" ph="/// Get the spectrum for the audio that's currently playing. ... " />
+            <marker date="1553292552857" expanded="true" signature="20633:20708" ph="{...}" />
+            <marker date="1553292552857" expanded="true" signature="20714:20811" ph="/// Draw analysis results in graphs for the next 300 frames. ... " />
+            <marker date="1553292552857" expanded="true" signature="20844:21183" ph="{...}" />
+            <marker date="1553292552857" expanded="true" signature="21001:21078" ph="{...}" />
+            <marker date="1553292552857" expanded="true" signature="21103:21177" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/BeatMeter.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="141" column="17" lean-forward="true" selection-start-line="141" selection-start-column="17" selection-end-line="141" selection-end-column="17" />
+          <folding>
+            <marker date="1553298997108" expanded="false" signature="6:163" ph="..." />
+            <marker date="1553298997108" expanded="true" signature="203:6086" ph="{...}" />
+            <marker date="1553298997108" expanded="true" signature="789:1226" ph="{...}" />
+            <marker date="1553298997108" expanded="true" signature="946:1021" ph="/* eventProvider.Beat += OnBeat; ... */" />
+            <marker date="1553298997108" expanded="true" signature="1272:1359" ph="{...}" />
+            <marker date="1553298997108" expanded="true" signature="1391:1678" ph="{...}" />
+            <marker date="1553298997108" expanded="true" signature="1697:1802" ph="{...}" />
+            <marker date="1553298997108" expanded="true" signature="1834:3415" ph="{...}" />
+            <marker date="1553298997108" expanded="true" signature="1849:2074" ph="/* this is the code that removes beats that aren't in the right area, however I prefer to do it via collision ... */" />
+            <marker date="1553298997108" expanded="true" signature="2083:2561" ph="/* List&lt;BeatObject&gt; toRemove = new List&lt;BeatObject&gt;(); ... */" />
+            <marker date="1553298997108" expanded="true" signature="2715:2906" ph="{...}" />
+            <marker date="1553298997108" expanded="true" signature="2950:3409" ph="{...}" />
+            <marker date="1553298997108" expanded="true" signature="2990:3399" ph="{...}" />
+            <marker date="1553298997108" expanded="true" signature="3216:3338" ph="/* pos.x -= (magnitudeSmooth[rhythmTool.currentFrame] * .008f * rhythmTool.interpolation); ... */" />
+            <marker date="1553298997108" expanded="true" signature="3451:3615" ph="{...}" />
+            <marker date="1553298997108" expanded="true" signature="3485:3552" ph="{...}" />
+            <marker date="1553298997108" expanded="true" signature="3712:5361" ph="{...}" />
+            <marker date="1553298997108" expanded="true" signature="3753:5355" ph="{...}" />
+            <marker date="1553298997108" expanded="true" signature="4375:5345" ph="{...}" />
+            <marker date="1553298997108" expanded="true" signature="4406:4621" ph="/* store the remaining part of the float because frames are ints, but bpm fractions are floats ... */" />
+            <marker date="1553298997108" expanded="true" signature="4747:4866" ph="{...}" />
+            <marker date="1553298997108" expanded="true" signature="4960:5121" ph="{...}" />
+            <marker date="1553298997108" expanded="true" signature="5242:5331" ph="{...}" />
+            <marker date="1553298997108" expanded="true" signature="5408:5656" ph="{...}" />
+            <marker date="1553298997108" expanded="true" signature="5687:5803" ph="{...}" />
+            <marker date="1553298997108" expanded="true" signature="5852:5985" ph="{...}" />
+            <marker date="1553298997108" expanded="true" signature="6035:6079" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

@@ -156,9 +156,9 @@ MonoBehaviour:
   patterns:
   - {fileID: 11400000, guid: cdb49b31f2a2e5048b85deec1664dd69, type: 2}
   - {fileID: 11400000, guid: ca29b79370fe44246bd5735ddde4c0c5, type: 2}
-  - {fileID: 11400000, guid: 9ed07fc316d0e634fac4d327e3eb200d, type: 2}
-  - {fileID: 11400000, guid: ac4f3c52db187f0438813044c3136f1e, type: 2}
-  bpm: 120
+  - {fileID: 11400000, guid: f29299e61f56e8a40a1809277dfc3998, type: 2}
+  - {fileID: 11400000, guid: 69210ea6f7c8f854f95c1f73cea19d16, type: 2}
+  bpm: 115
 --- !u!114 &269587787
 MonoBehaviour:
   m_ObjectHideFlags: 0

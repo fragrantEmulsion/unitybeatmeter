@@ -45,7 +45,7 @@ public class RhythmTool : MonoBehaviour, IEventSequence
     /// <summary>
     /// The number of samples the FFT window moves for each frame.
     /// </summary>
-    public static int frameSpacing { get { return 512; } } //1470
+    public static int frameSpacing { get { return 735; } } //1470
 
     /// <summary>
     /// The number of frames that are a part of the analysis at any time.

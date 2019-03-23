@@ -19,6 +19,9 @@ public class BeatMeter : MonoBehaviour
 
     private List<BeatObject> beats;
     private ReadOnlyCollection<float> magnitudeSmooth;
+    private float songFps;
+    private float beatsPerSecond;
+    private int frameIndexGap; //space between beats. Currently, 1 section is 4 beats, so each gap should be 
 
     void Start()
     {
@@ -42,7 +45,13 @@ public class BeatMeter : MonoBehaviour
         rhythmTool.Play ();
     }
     private void OnSongLoaded()
-    {          
+    {   
+        songFps = 1 / rhythmTool.frameLength;
+        Debug.Log("Song fps: " + songFps);
+
+        beatsPerSecond = bpm / 60.0f; 
+        Debug.Log("Beats per second: " + beatsPerSecond);
+        
         videoPlayer.Play();
         StartCoroutine(StartWait(audioOffset));
     }
@@ -51,7 +60,6 @@ public class BeatMeter : MonoBehaviour
     {
         if (!rhythmTool.songLoaded)        						
             return;
-        
         UpdateBeats();
     }
 
@@ -112,30 +120,41 @@ public class BeatMeter : MonoBehaviour
         
         Debug.Log("Beat Index: " + beat.index);
     }
-
+    
+    //this is where the magic happens
     private void OnOnset(OnsetType type, Onset onset)
     {
         if (type == OnsetType.All)
         {
-            BeatPattern pattern = SelectPattern(Random.Range(0, patterns.Count));
-            List<int> beatList = pattern.pattern;
-            int indexIncrement = 0;
+            BeatPattern pattern = SelectPattern(Random.Range(0, patterns.Count)); //randomly select a supplied pattern object
+            List<int> beatList = pattern.pattern; //copy the beat data from the pattern
+            
+            int indexModifier = 0; //number of frames between spawned beats and the onset which triggers spawning
+            int indexIncrement = (bpm / beatList.Count); //fixed value between each beat
+            float indexFloatFix = 0.0f; //a value that stores the remainder in case the bpm is not divisible into perfect frames
+            
             foreach (int i in beatList)
             {
-            
+                //store the remaining part of the float because frames are ints, but bpm fractions are floats
+                //if there is a remainder in excess of 1, decrement 1 from storage, and increment the index modifier by 1
+                indexFloatFix += Mathf.Repeat(((float)bpm / beatList.Count), 1.0f);
+                if (indexFloatFix > 1.0f)
+                {
+                    indexFloatFix -= 1.0f;
+                    indexModifier += 1;
+                }
+                //spawn the beat and increment the index modifier
                 if (i == 1)
                 {
-                    beats.Add(CreateBeat(onset.index + indexIncrement));
-                    indexIncrement += 15;
+                    beats.Add(CreateBeat(onset.index + indexModifier));
+                    indexModifier += indexIncrement;
                 }
+                // still increment the index modifer when there is no beat to be spawned
                 else if(i == 0)
                 {
-                    indexIncrement += 15; //this should be variable based on bpm, figure out soon
+                    indexModifier += indexIncrement;
                 }
-                Debug.Log(i);
             }
-
-            indexIncrement = 0;
         }
     }
 
